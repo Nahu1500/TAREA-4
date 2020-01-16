@@ -227,10 +227,6 @@ fieldset{
 	margin: 0;
 	border: none;
 }
-legend{
-	background-color: red;
-	text-align: center;
-}
 form{
 	display: flex;
 	flex-direction: column;
@@ -239,4 +235,30 @@ form{
 }
 input{
 	margin: 1em;
+	border-radius: 1em;
+	padding-left: 0.2vw;
+	padding-right: 0.2vw;
+	text-align: center;
+	border-color: black;
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+}
+fieldset label{
+	margin: 0
+	width 80vw;
+	display: flex;
+	margin: 5em 0.5em;
+}
+legend{
+	color: red;
+	background-color: black;
+	text-align: center;
+}
+.desliza h5 + div{
+	display: none;
+}
+.desliza :target h5 + div{
+	display: block;
+}
+#submit{
+	background-color: #eb871d
 }

@@ -19,7 +19,7 @@
 			</p>
 		</nav>
 		<main id="form">
-			<form>
+			<form action="show_data.html">
 				<fieldset>
 					<legend>Personal Information</legend>
 					<label>Player’s First Name:
@@ -40,23 +40,35 @@
 					<label>Birth Date:
 						<input type="Date" name="birth">
 					</label>
-					<label>Gender:
-						<input type="radio" name="female">Female
-						<input type="radio" name="male">Male
+					<label>Gender
+						<input type="radio" name="gender" value="f">Female
+					</label>
+					<label>
+						<input type="radio" name="gender" value="m">Male
 					</label>
 					<label>Grade:
 						<input type="radio" name="pre">Pre-School
+					</label>
+					<label>
 						<input type="radio" name="first">1st
+					</label>
+					<label>
 						<input type="radio" name="second">2nd
+					</label>
+					<label>
 						<input type="radio" name="third">3rd
+					</label>
+					<label>
 						<input type="radio" name="fourth">4th
+					</label>
+					<label>
 						<input type="radio" name="fifth">5th
 					</label>
 					<label>Parent/Guardian:
 						<input type="text" name="parent" placeholder="Enter your Name">
 					</label>
 					<label>Contact Phone:
-						<input type="telephone" name="telephone" placeholder="Enter your Phone Number">
+						<input type="tel" name="telephone" placeholder="Enter your Phone Number">
 					</label>
 					<label>Contact Email:
 						<input type="email" name="email" placeholder="Enter your Email">
@@ -66,18 +78,38 @@
 					<legend>Which elementary schools do you live near?</legend>
 					<label>First Closest School:
 						<input type="radio" name="school1">AJ Katzenmaier
+					</label>
+					<label>
 						<input type="radio" name="school2">Greenbay
+					</label>
+					<label>
 						<input type="radio" name="school3">Howard A Yeager
+					</label>
+					<label>
 						<input type="radio" name="school4">Marjorie P Hart
+					</label>
+					<label>
 						<input type="radio" name="school5">North Elementary
+					</label>
+					<label>
 						<input type="radio" name="school6">South Elementary
 					</label>
 					<label>Second Closest School:
 						<input type="radio" name="school1">AJ Katzenmaier
+					</label>
+					<label>
 						<input type="radio" name="school2">Greenbay
+					</label>
+					<label>
 						<input type="radio" name="school3">Howard A Yeager
+					</label>
+					<label>
 						<input type="radio" name="school4">Marjorie P Hart
+					</label>
+					<label>
 						<input type="radio" name="school5">North Elementary
+					</label>
+					<label>
 						<input type="radio" name="school6">South Elementary
 					</label>
 				</fieldset>
@@ -85,8 +117,14 @@
 					<legend>What position(s) do you normally play? (check all that apply)</legend>
 					<label>
 						<input type="radio" name="forward">Forward
+					</label>
+					<label>
 						<input type="radio" name="defense">Defense
+					</label>
+					<label>
 						<input type="radio" name="midfield">Midfield
+					</label>
+					<label>
 						<input type="radio" name="goalkeeper">Goalkeeper
 					</label>
 				</fieldset>
@@ -94,8 +132,14 @@
 					<legend>What position(s) do you want to play? (check all that apply)</legend>
 					<label>
 						<input type="radio" name="forward">Forward
+					</label>
+					<label>
 						<input type="radio" name="defense">Defense
+					</label>
+					<label>
 						<input type="radio" name="midfield">Midfield
+					</label>
+					<label>
 						<input type="radio" name="goalkeeper">Goalkeeper
 					</label>
 				</fieldset>
@@ -105,20 +149,44 @@
 					</label>
 					<label>Jersey Size:
 						<input type="radio" name="ysmall">Youth Small
+					</label>
+					<label>
 						<input type="radio" name="ymedium">Youth Medium
+					</label>
+					<label>
 						<input type="radio" name="ylarge">Youth Large
+					</label>
+					<label>
 						<input type="radio" name="small">Small
+					</label>
+					<label>
 						<input type="radio" name="medium">Medium
+					</label>
+					<label>
 						<input type="radio" name="large">Large
+					</label>
+					<label>
 						<input type="radio" name="extra-large">Extra-Large
 					</label>
 					<label>Shorts Size:
 						<input type="radio" name="ysmall">Youth Small
+					</label>
+					<label>
 						<input type="radio" name="ymedium">Youth Medium
+					</label>
+					<label>
 						<input type="radio" name="ylarge">Youth Large
+					</label>
+					<label>
 						<input type="radio" name="small">Small
+					</label>
+					<label>
 						<input type="radio" name="medium">Medium
+					</label>
+					<label>
 						<input type="radio" name="large">Large
+					</label>
+					<label>
 						<input type="radio" name="extra-large">Extra-Large
 					</label>
 				</fieldset>
@@ -133,7 +201,7 @@
 					sponsored activities, which transportation.
 					</p>
 					<p>
-					By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
+					By entering your name below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
 					cancellation policy and agree to its terms. 
 					</p>
 				<label>Parent/Guardian Signature:
@@ -143,6 +211,9 @@
 					<input type="date" name="date">
 				</label>
 				</fieldset>
+				<label>				
+					<input type="submit" name="Submit" id="submit">
+				</label>
 			</form>
 		</main>
 	</body>
