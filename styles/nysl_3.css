@@ -224,14 +224,18 @@ ol{
 	background-color: #13448f;
 }
 fieldset{
-	margin: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 75vw;
 	border: none;
 }
 form{
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: 53vw;
+	justify-content: center;
 	width: 75vw;
-	margin: 0vh 10vw
+	margin: 0;
 }
 input{
 	margin: 1em;
@@ -241,12 +245,6 @@ input{
 	text-align: center;
 	border-color: black;
 	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
-}
-fieldset label{
-	margin: 0
-	width 80vw;
-	display: flex;
-	margin: 5em 0.5em;
 }
 legend{
 	color: red;
@@ -260,5 +258,110 @@ legend{
 	display: block;
 }
 #submit{
-	background-color: #eb871d
+	background-color: #eb871d;
+	display: inline-block;
+}
+#submit:hover{
+	color: white;
+	background-color: black;
+	cursor: pointer;
+}
+#mapa1,#mapa2,#mapa3,#mapa4,#mapa5,#mapa6{
+	display: none;
+
+}
+#mapa1:target,#mapa2:target,#mapa3:target,#mapa4:target,#mapa5:target,#mapa6:target{	
+	display: block;
+	position: fixed;
+	z-index: 101;
+	background-color: #00000066;
+	height: 100vh;
+	width: 100vw;
+
+}
+.map_button{
+	position: fixed;
+	top: 21vh;
+	right: 20.5vw;
+	z-index: 102;
+	font-size: 20px;
+	background-color: gray;
+	border-style: ridge;
+	border-color: white;
+	text-decoration: none;
+	font-family: Arial;
+	width: 2vw;
+	text-align: center;
+	color: white;
+}
+.map_button:hover{
+	background-color: red;
+	cursor: pointer;
+	transition:all .2s ease-in-out;
+	border-color: black;
+	border-radius: 3px;
+}
+.map_button a{
+	color: white;
+	text-decoration: none;
+}
+.map_button a:hover{
+	color: black;
+	transition:all .2s ease-in-out;
+}
+iframe{
+	margin: 25vh 25vw;
+	height: 50vh;
+	width: 50vw;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 30vw 30vw;
+	justify-content: center;
+}
+#tres{
+	display: grid;
+	grid-template-columns: 25vw 25vw 25vw;
+	justify-content: center;
+}
+#date{
+	display: grid;
+	grid-template-columns: 20vw 12vw 10vw 25vw;
+	justify-content: center;
+}
+#male{
+	margin-right: 50px;
+}
+input:focus{
+	outline: none;
+}
+td:hover{
+	cursor: pointer;
+	background-color: red;
+}
+#school{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#position{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#position2{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#uniform{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;	
+}
+fieldset{
+	margin-bottom: 5vh;
+}
+legend{
+	margin-bottom: 5vh;
 }
